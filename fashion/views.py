@@ -9,5 +9,8 @@ def home(request):
 def shop(request):
     return render(request,'fashionHTML/shop.html')
 
+def cart(request):
+    return render(request,'fashionHTML/cart.html')
+
 def contact(request):
     return render(request,'fashionHTML/contact.html')
