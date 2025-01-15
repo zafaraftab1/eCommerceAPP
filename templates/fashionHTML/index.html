@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ShopMax &mdash; Colorlib e-Commerce Template</title>
+    <title>ShopMax</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -41,7 +41,7 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">ShopMax</a>
+              <a href="{% url 'home' %}" class="js-logo-clone">ShopMax</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
@@ -91,11 +91,11 @@
             <div class="site-block-cover-content">
             <h2 class="sub-title">#New Summer Collection 2019</h2>
             <h1>Arrivals Sales</h1>
-            <p><a href="#" class="btn btn-black rounded-0">Shop Now</a></p>
+            <p><a href="{% url 'shop' %}" class="btn btn-black rounded-0">Shop Now</a></p>
             </div>
           </div>
           <div class="col-md-6 order-1 align-self-end">
-            <img src="{% static 'images/model_3.png' %}" alt="Image" class="img-fluid">
+            <img src="{% static 'image/model_3.png' %}" alt="Image" class="img-fluid">
           </div>
         </div>
       </div>
@@ -110,18 +110,18 @@
           <div class="col-lg-8">
             <div class="product-item sm-height full-height bg-gray">
               <a href="#" class="product-category">Women <span>25 items</span></a>
-              <img src="{% static 'images/model_4.png'%}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/model_4.png'%}" alt="Image" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-4">
             <div class="product-item sm-height bg-gray mb-4">
               <a href="#" class="product-category">Men <span>25 items</span></a>
-              <img src="{% static 'images/model_5.png'%}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/model_5.png'%}" alt="Image" class="img-fluid">
             </div>
 
             <div class="product-item sm-height bg-gray">
               <a href="#" class="product-category">Shoes <span>25 items</span></a>
-              <img src="{% static 'images/model_6.png' %}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/model_6.png' %}" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -140,14 +140,14 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 item-entry mb-4">
             <a href="#" class="product-item md-height bg-gray d-block">
-              <img src="{% static 'images/prod_2.png' %}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/prod_2.png' %}" alt="Image" class="img-fluid">
             </a>
             <h2 class="item-title"><a href="#">Gray Shoe</a></h2>
             <strong class="item-price">$20.00</strong>
           </div>
           <div class="col-lg-4 col-md-6 item-entry mb-4">
             <a href="#" class="product-item md-height bg-gray d-block">
-              <img src="{% static 'images/prod_3.png' %}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/prod_3.png' %}" alt="Image" class="img-fluid">
             </a>
             <h2 class="item-title"><a href="#">Blue Shoe High Heels</a></h2>
             <strong class="item-price"><del>$46.00</del> $28.00</strong>
@@ -155,7 +155,7 @@
 
           <div class="col-lg-4 col-md-6 item-entry mb-4">
             <a href="#" class="product-item md-height bg-gray d-block">
-              <img src="{% static 'images/model_5.png' %}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/model_5.png' %}" alt="Image" class="img-fluid">
             </a>
             <h2 class="item-title"><a href="#">Denim Jacket</a></h2>
             <strong class="item-price"><del>$46.00</del> $28.00</strong>
@@ -171,7 +171,7 @@
           </div>
           <div class="col-lg-4 col-md-6 item-entry mb-4">
             <a href="#" class="product-item md-height bg-gray d-block">
-              <img src="{% static 'images/prod_1.png' %}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/prod_1.png' %}" alt="Image" class="img-fluid">
             </a>
             <h2 class="item-title"><a href="#">Leather Green Bag</a></h2>
             <strong class="item-price"><del>$46.00</del> $28.00</strong>
@@ -186,14 +186,14 @@
 
           <div class="col-lg-4 col-md-6 item-entry mb-4">
             <a href="#" class="product-item md-height bg-gray d-block">
-              <img src="{% static 'images/model_1.png' %}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/model_1.png' %}" alt="Image" class="img-fluid">
             </a>
             <h2 class="item-title"><a href="#">Smooth Cloth</a></h2>
             <strong class="item-price"><del>$46.00</del> $28.00</strong>
           </div>
           <div class="col-lg-4 col-md-6 item-entry mb-4">
             <a href="#" class="product-item md-height bg-gray d-block">
-              <img src="{% static 'images/model_7.png' %}" alt="Image" class="img-fluid">
+              <img src="{% static 'image/model_7.png' %}" alt="Image" class="img-fluid">
             </a>
             <h2 class="item-title"><a href="#">Yellow Jacket</a></h2>
             <strong class="item-price">$58.00</strong>
@@ -216,7 +216,7 @@
               <div class="item">
                 <div class="item-entry">
                   <a href="#" class="product-item md-height bg-gray d-block">
-                    <img src="{% static 'images/model_1.png' %}" alt="Image" class="img-fluid">
+                    <img src="{% static 'image/model_1.png' %}" alt="Image" class="img-fluid">
                   </a>
                   <h2 class="item-title"><a href="#">Smooth Cloth</a></h2>
                   <strong class="item-price"><del>$46.00</del> $28.00</strong>
@@ -232,7 +232,7 @@
               <div class="item">
                 <div class="item-entry">
                   <a href="#" class="product-item md-height bg-gray d-block">
-                    <img src="{% static 'images/prod_3.png' %}" alt="Image" class="img-fluid">
+                    <img src="{% static 'image/prod_3.png' %}" alt="Image" class="img-fluid">
                   </a>
                   <h2 class="item-title"><a href="#">Blue Shoe High Heels</a></h2>
                   <strong class="item-price"><del>$46.00</del> $28.00</strong>
@@ -249,7 +249,7 @@
               <div class="item">
                 <div class="item-entry">
                   <a href="#" class="product-item md-height bg-gray d-block">
-                    <img src="{% static 'images/model_5.png' %}" alt="Image" class="img-fluid">
+                    <img src="{% static 'image/model_5.png' %}" alt="Image" class="img-fluid">
                   </a>
                   <h2 class="item-title"><a href="#">Denim Jacket</a></h2>
                   <strong class="item-price"><del>$46.00</del> $28.00</strong>
@@ -267,7 +267,7 @@
               <div class="item">
                 <div class="item-entry">
                   <a href="#" class="product-item md-height bg-gray d-block">
-                    <img src="{% static 'images/prod_1.png' %}" alt="Image" class="img-fluid">
+                    <img src="{% static 'image/prod_1.png' %}" alt="Image" class="img-fluid">
                   </a>
                   <h2 class="item-title"><a href="#">Leather Green Bag</a></h2>
                   <strong class="item-price"><del>$46.00</del> $28.00</strong>
@@ -283,7 +283,7 @@
               <div class="item">
                 <div class="item-entry">
                   <a href="#" class="product-item md-height bg-gray d-block">
-                    <img src="{% static 'images/model_7.png' %}" alt="Image" class="img-fluid">
+                    <img src="{% static 'image/model_7.png' %}" alt="Image" class="img-fluid">
                   </a>
                   <h2 class="item-title"><a href="#">Yellow Jacket</a></h2>
                   <strong class="item-price">$58.00</strong>
@@ -315,7 +315,7 @@
             </div>
           </div>
           <div class="col-md-6 order-1 align-self-end">
-            <img src="{% static 'images/model_6.png' %}" alt="Image" class="img-fluid">
+            <img src="{% static 'image/model_6.png' %}" alt="Image" class="img-fluid">
           </div>
         </div>
       </div>
@@ -327,7 +327,7 @@
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Promo</h3>
             <a href="#" class="block-6">
-              <img src="{% static 'images/about_1.jpg' %}" alt="Image placeholder" class="img-fluid rounded mb-4">
+              <img src="{% static 'image/about_1.jpg' %}" alt="Image placeholder" class="img-fluid rounded mb-4">
               <h3 class="font-weight-light  mb-0">Finding Your Perfect Shirts This Summer</h3>
               <p>Promo from  July 15 &mdash; 25, 2019</p>
             </a>
@@ -397,15 +397,15 @@
     </footer>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
+  <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+  <script src="{% static 'js/jquery-ui.js'%}"></script>
+  <script src="{% static 'js/popper.min.js'%}"></script>
+  <script src="{% static 'js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+  <script src="{% static 'js/aos.js'%}"></script>
 
-  <script src="js/main.js"></script>
+  <script src="{% static 'js/main.js'%}"></script>
     
   </body>
 </html>
