@@ -74,7 +74,7 @@
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
             <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a>
-            <a href="cart.html" class="icons-btn d-inline-block bag">
+            <a href="{% url 'cart' %}" class="icons-btn d-inline-block bag">
               <span class="icon-shopping-bag"></span>
               <span class="number">2</span>
             </a>
@@ -143,7 +143,7 @@
               <img src="{% static 'image/prod_2.png' %}" alt="Image" class="img-fluid">
             </a>
             <h2 class="item-title"><a href="#">Gray Shoe</a></h2>
-            <strong class="item-price">$20.00</strong>
+            <strong class="item-price">${{ price }}</strong>
           </div>
           <div class="col-lg-4 col-md-6 item-entry mb-4">
             <a href="#" class="product-item md-height bg-gray d-block">
@@ -361,7 +361,8 @@
               </div>
             </div>
           </div>
-          
+
+
           <div class="col-md-6 col-lg-3">
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
@@ -387,7 +388,7 @@
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+             All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by Zafar Aftab</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>

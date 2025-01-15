@@ -75,7 +75,7 @@
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
             <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a>
-            <a href="cart.html" class="icons-btn d-inline-block bag">
+            <a href="{% url 'cart' %}" class="icons-btn d-inline-block bag">
               <span class="icon-shopping-bag"></span>
               <span class="number">2</span>
             </a>
@@ -138,7 +138,7 @@
             </div>
 
             </div>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Add To Cart</a></p>
+            <p><a href="{% url 'cart' %}" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Add To Cart</a></p>
 
           </div>
         </div>
@@ -265,7 +265,7 @@
                 <ul class="list-unstyled">
                   <li><a href="#">Sell online</a></li>
                   <li><a href="#">Features</a></li>
-                  <li><a href="#">Shopping cart</a></li>
+                  <li><a href="{% url 'cart' %}">Shopping cart</a></li>
                   <li><a href="#">Store builder</a></li>
                 </ul>
               </div>
