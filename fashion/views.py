@@ -1,9 +1,12 @@
 from django.shortcuts import render
-
+from .models import fashionCategory
 
 # Create your views here.
 def home(request):
-    return render(request,'fashionHTML/index.html', {'price' : '100'})
+    category1= fashionCategory()
+    category1.name="Gray Shoe"
+    category1.price= 18.25
+    return render(request,'fashionHTML/index.html', {'category1' : category1})
 
 def shop(request):
     return render(request,'fashionHTML/shop.html')
