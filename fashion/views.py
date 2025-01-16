@@ -3,9 +3,7 @@ from .models import fashionCategory
 
 # Create your views here.
 def home(request):
-    category1= fashionCategory()
-    category1.name="Gray Shoe"
-    category1.price= 18.25
+    category1 = fashionCategory.objects.all()
     return render(request,'fashionHTML/index.html', {'category1' : category1})
 
 def shop(request):
