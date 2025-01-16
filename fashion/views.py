@@ -3,8 +3,8 @@ from .models import fashionCategory
 
 # Create your views here.
 def home(request):
-    category1 = fashionCategory.objects.all()
-    return render(request,'fashionHTML/index.html', {'category1' : category1})
+    categories = fashionCategory.objects.all()
+    return render(request,'fashionHTML/index.html', {'category1' : categories})
 
 def shop(request):
     return render(request,'fashionHTML/shop.html')
