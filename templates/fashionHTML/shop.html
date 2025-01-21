@@ -154,6 +154,17 @@
                 <h2 class="item-title"><a href="#">Gray Shoe</a></h2>
                 <strong class="item-price">$20.00</strong>
               </div>
+                <div>
+             {% for category in category1 %}
+               <div class="col-lg-6 col-md-6 item-entry mb-4">
+                  <a href="#" class="product-item md-height bg-gray d-block">
+                    <img src="{{ category.image.url }}" alt="Image" class="img-fluid">
+                  </a>
+                  <h2 class="item-title"><a href="#">{{ category.name }}</a></h2>
+                  <strong class="item-price">${{ category.price }}</strong>
+                 </div>
+              {% endfor %}
+                </div>
               <div class="col-lg-6 col-md-6 item-entry mb-4">
                 <a href="#" class="product-item md-height bg-gray d-block">
                   <img src="{% static 'image/prod_3.png'%}" alt="Image" class="img-fluid">
@@ -161,6 +172,7 @@
                 <h2 class="item-title"><a href="#">Blue Shoe High Heels</a></h2>
                 <strong class="item-price"><del>$46.00</del> $28.00</strong>
               </div>
+
 
               <div class="col-lg-6 col-md-6 item-entry mb-4">
                 <a href="#" class="product-item md-height bg-gray d-block">

@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fashionDatabase',
         'USER': 'postgres',
-        'PASSWORD': '<YourPassword>',
+        'PASSWORD': 'aftab@14581',
         'HOST': 'localhost',
         'PORT': '5432',
     }
