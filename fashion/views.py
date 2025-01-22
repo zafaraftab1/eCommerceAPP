@@ -21,3 +21,6 @@ def thankyou(request):
 
 def signup(request):
     return render(request,'fashionHTML/signin_signup.html')
+
+def shopSingle(request):
+    return render(request,'fashionHTML/shop-single.html')
